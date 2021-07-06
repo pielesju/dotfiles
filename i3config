@@ -2,7 +2,8 @@ set $mod Mod4
 set $alt Mod1
 
 #font pango:DejaVu Sans Mono 12
-font pango:Perfect DOS VGA 437 Win 12
+#font pango:Perfect DOS VGA 437 Win 12
+font pango:DejaVu Sans Mono 12
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
