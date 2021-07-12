@@ -14,6 +14,8 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
+exec --no-startup-id xrdb /home/julian/.config/X11/xresources
+
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +1% && $refresh_i3status
@@ -25,9 +27,9 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 5
 bindsym XF86MonBrightnessDown exec xbacklight -dec 5
 
 # set random wallpaper
-exec --no-startup-id feh --randomize --bg-scale /home/julian/myfiles/pictures/wallpapers/*
+exec --no-startup-id feh --no-fehbg --randomize --bg-scale /home/julian/myfiles/pictures/wallpapers/*
 #exec --no-startup-id feh --bg-scale /home/julian/myfiles/pictures/wallpapers/linux_bg.png
-bindsym $mod+Shift+w exec feh --randomize --bg-scale /home/julian/myfiles/pictures/wallpapers/*
+bindsym $mod+Shift+w exec feh --no-fehbg --randomize --bg-scale /home/julian/myfiles/pictures/wallpapers/*
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod

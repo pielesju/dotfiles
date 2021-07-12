@@ -10,6 +10,10 @@ alias ..='cd ..'
 alias spawn='cd /'
 alias home='cd ~'
 
+unset HISTFILE
+
+alias vim='vim -u ~/.config/vim/vimrc'
+
 # pacman commands
 alias install='sudo pacman -S'
 alias deinstall='sudo pacman -R'
@@ -21,10 +25,6 @@ PS1="\w \$ "
 cd /home/julian
 ./myfiles/fetch.sh
 ./myfiles/dotfiles.sh
-
-rm .lesshst > /dev/null 2>&1
-rm .viminfo > /dev/null 2>&1
-rm .bash_history > /dev/null 2>&1
 
 # ls commands
 alias count='ll | wc -l'
@@ -47,3 +47,5 @@ export GTK2_RC_FILE="$XDF_CONFIG_HOME"/gtk-2.0/gtkrc
 export GNUPGHOME="$XDG_DATA_HOME"/gnupg
 alias gpg2='gpg2 --homedir "$XDG_DATA_HOME"/gnupg'
 export HISTFILE="$XDG_DATA_HOME"/bash/history
+export XAUTHORITY="$XDG_RUNTIME_DIR"/Xauthority
+export LESSHISTFILE="/dev/null"
