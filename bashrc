@@ -40,3 +40,6 @@ export XINITRC="$XDG_CONFIG_HOME"/X11/xinitrc
 export XSERVERRC="$XDG_CONFIG_HOME"/X11/xserverrc
 export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
 export GTK2_RC_FILE="$XDF_CONFIG_HOME"/gtk-2.0/gtkrc
+export GNUPGHOME="$XDG_DATA_HOME"/gnupg
+alias gpg2='gpg2 --homedir "$XDG_DATA_HOME"/gnupg'
+export HISTFILE="$XDG_DATA_HOME"/bash/history
