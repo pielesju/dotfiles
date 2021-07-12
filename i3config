@@ -1,8 +1,6 @@
 set $mod Mod4
 set $alt Mod1
 
-#font pango:DejaVu Sans Mono 12
-#font pango:Perfect DOS VGA 437 Win 12
 font pango:DejaVu Sans Mono 12
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
@@ -15,14 +13,6 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
-
-#autostart
-#for_window [class="Libreoffice"] move container to workspace 1
-#exec --no-startup-id libreoffice
-#for_window [class="vlc"] move container to workspace 2
-#exec --no-startup-id vlc /home/julian/myfiles/linux-presentation/stallman.mp4
-#for_window [class="Google-chrome"] move container to workspace 3
-#exec --no-startup-id xdg-open https://github.com/vim/vim
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status

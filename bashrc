@@ -22,6 +22,10 @@ cd /home/julian
 ./myfiles/fetch.sh
 ./myfiles/dotfiles.sh
 
+rm .lesshst > /dev/null 2>&1
+rm .viminfo > /dev/null 2>&1
+rm .bash_history > /dev/null 2>&1
+
 # ls commands
 alias count='ll | wc -l'
 alias lms='ls -liah'
