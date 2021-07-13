@@ -1,3 +1,9 @@
+#        _                    
+# __   _(_)_ __ ___  _ __ ___ 
+# \ \ / / | '_ ` _ \| '__/ __|
+#  \ V /| | | | | | | | | (__ 
+#   \_/ |_|_| |_| |_|_|  \___|
+
 set columns=80
 set textwidth=80
 set backspace=start,eol,indent

@@ -1,3 +1,9 @@
+#  _               _              
+# | |__   __ _ ___| |__  _ __ ___ 
+# | '_ \ / _` / __| '_ \| '__/ __|
+# | |_) | (_| \__ \ | | | | | (__ 
+# |_.__/ \__,_|___/_| |_|_|  \___|
+
 # xrandr commands
 alias dock='xrandr --output DP2-3 --mode 1920x1080 --output eDP1 --off'
 alias undock='xrandr --output eDP1 --mode 1366x768 --output DP2-3 --off'
@@ -23,8 +29,8 @@ alias orphans='sudo pacman -Rs $(pacman -Qqtd)'
 PS1="\w \$ "
 
 cd /home/julian
-./myfiles/fetch.sh
-./myfiles/dotfiles.sh
+./files/scripts/fetch.sh
+./files/scripts/dotfiles.sh
 
 # ls commands
 alias count='ll | wc -l'
@@ -49,3 +55,4 @@ alias gpg2='gpg2 --homedir "$XDG_DATA_HOME"/gnupg'
 export HISTFILE="$XDG_DATA_HOME"/bash/history
 export XAUTHORITY="$XDG_RUNTIME_DIR"/Xauthority
 export LESSHISTFILE="/dev/null"
+                                
