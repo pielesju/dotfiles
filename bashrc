@@ -31,6 +31,7 @@ PS1="\w \$ "
 cd /home/julian
 ./files/scripts/fetch.sh
 ./files/scripts/dotfiles.sh
+pacman -Qqe > files/dotfiles/pkglist.txt
 
 # ls commands
 alias count='ll | wc -l'
