@@ -1,3 +1,4 @@
+acpi
 autoconf
 automake
 base
@@ -27,10 +28,10 @@ gzip
 hdparm
 higan
 i3-gaps
-i3status
 intel-ucode
 iwd
 jdk-openjdk
+jq
 libreoffice-still
 libtool
 linux

@@ -30,6 +30,3 @@ set smartcase
 set showcmd
 set showmode
 set showmatch
-set hlsearch
-set history=1000
-set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
