@@ -39,7 +39,14 @@ printf "%s%s%s\n" "$pac" "${padding:${#pac}}" "║"
 
 repeat $mar ' '; echo -n
 echo -n -e "║ osvn ║ "
-dist=$(uname -r)
+osvn=$(uname -r)
+printf "%s%s%s\n" "$osvn" "${padding:${#osvn}}" "║"
+
+repeat $mar ' '; echo -n
+echo -n -e "║ dist ║ "
+dist=$(distro)
+dist=${dist#*: }
+dist=${dist%%$'\n'*}
 printf "%s%s%s\n" "$dist" "${padding:${#dist}}" "║"
 
 repeat $mar ' '; echo -n
@@ -49,7 +56,7 @@ printf "%s%s%s\n" "$list" "${padding:${#list}}" "║"
 
 repeat $mar ' '; echo -n
 echo -n -e "║ size ║ "
-size=$(du -s -h /home/julian | tr -d '[:space:]')
+size=$(du -s -h $HOME | tr -d '[:space:]')
 size=${size%%/*}
 printf "%s%s%s\n" "$size" "${padding:${#size}}" "║"
 
