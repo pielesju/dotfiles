@@ -16,6 +16,9 @@ exec --no-startup-id feh --no-fehbg --randomize --bg-scale /home/julian/files/pi
 # applications
 bindsym $mod+Shift+w exec feh --no-fehbg --randomize --bg-scale /home/julian/files/pictures/wallpapers/*
 bindsym $alt+i exec firefox
+bindsym $alt+m exec thunderbird
+bindsym $alt+g exec gim
+bindsym $alt+t exec urxvt
 bindsym $mod+Return exec urxvt
 
 # volume control

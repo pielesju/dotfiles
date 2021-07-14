@@ -42,7 +42,6 @@ alias startx='startx "$XDG_CONFIG_HOME/X11/xinitrc" --
 alias vim='vim -u ~/.config/vim/vimrc'
 
 # execute
-clear
 cd /home/julian
 ./files/scripts/fetch.sh
 ./files/scripts/dotfiles.sh
