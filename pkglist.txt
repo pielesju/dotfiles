@@ -27,6 +27,7 @@ hdparm
 higan
 htop
 i3-wm
+i3status
 intel-ucode
 iwd
 jq
@@ -54,7 +55,7 @@ sed
 smbclient
 sudo
 texinfo
-thunderbird
+tipp10
 ttf-dejavu
 unrar
 unzip

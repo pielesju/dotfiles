@@ -127,3 +127,15 @@ client.focused            #0088CC #0088CC #FFFFFF #FFFFFF
 client.focused_inactive   #333333 #333333 #FFFFFF #FFFFFF
 client.unfocused          #333333 #333333 #FFFFFF #FFFFFF
 client.urgent             #333333 #333333 #FFFFFF #FFFFFF
+
+bar {
+	status_command i3status
+	position top
+	separator_symbol " "
+
+	colors {
+		background #000000
+		statusline #FFFFFF
+		focused_workspace	#FFFFFF #0088CC
+	}
+}

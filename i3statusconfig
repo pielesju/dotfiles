@@ -21,26 +21,20 @@ wireless wlan0 {
 }
 
 volume master {
-        format = ")) %volume"
-        format_muted = ")) muted (%volume)"
+        format = "%volume"
+        format_muted = "muted (%volume)"
         device = "default"
         mixer = "Master"
         mixer_idx = 0
 }
 
-
 battery 0 {
-	format = "%status %percentage %remaining %emptytime"
+	format = "%percentage"
 	format_down = "No Battery"
-	status_chr = "CHR"
-        status_bat = "BAT"
-        status_unk = "UNK"
-        status_full = "FULL"
-        path = "/sys/class/power_supply/BAT%d/uevent"
-        low_threshold = 10
+    path = "/sys/class/power_supply/BAT%d/uevent"
+    low_threshold = 10
 }
 
 tztime local {
         format = "%d.%m.%Y %H:%M:%S"
 }
-                                    

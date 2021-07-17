@@ -3,8 +3,9 @@
 #  >  <| | |  __/\__ \ (_) | |_| | | | (_|  __/\__ \
 # /_/\_\_|  \___||___/\___/ \__,_|_|  \___\___||___/
 
+urxvt.background: #000000
 urxvt.foreground: #FFFFFF
-urxvt.font:xft:DejaVu Sans Mono:size:12
+urxvt.font:xft:DejaVu Sans Mono:size:10
 urxvt.scrollBar: false
 urxvt.internalBorder: 8
 urxvt.transparent: true
