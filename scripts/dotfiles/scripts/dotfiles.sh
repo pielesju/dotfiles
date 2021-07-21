@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /home/julian/files/
+cd /home/julian/files/scripts
 cp /home/julian/.config/i3/config dotfiles/i3config
 cp /home/julian/.config/i3status/config dotfiles/i3statusconfig
 cp /home/julian/.config/bash/bashrc dotfiles/bashrc

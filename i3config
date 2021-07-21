@@ -11,10 +11,10 @@ font pango:DejaVu Sans Mono 12
 
 # autostart
 exec --no-startup-id xrdb /home/julian/.config/X11/xresources
-exec --no-startup-id feh --no-fehbg --randomize --bg-scale /home/julian/files/pictures/wallpapers/*
+exec --no-startup-id feh --no-fehbg --randomize --bg-scale /home/julian/files/media/pictures/wallpapers/*
 
 # applications
-bindsym $mod+Shift+w exec feh --no-fehbg --randomize --bg-scale /home/julian/files/pictures/wallpapers/*
+bindsym $mod+Shift+w exec feh --no-fehbg --randomize --bg-scale /home/julian/files/media/pictures/wallpapers/*
 bindsym $alt+i exec firefox
 bindsym $alt+m exec thunderbird
 bindsym $alt+g exec gim
