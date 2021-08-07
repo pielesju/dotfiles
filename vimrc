@@ -30,3 +30,8 @@ set smartcase
 set showcmd
 set showmode
 set showmatch
+
+"compile current LaTeX document
+map I :! pdflatex %<CR><CR>
+"show compiled LaTeX document
+map S :! mupdf $(echo % \| sed 's/tex$/pdf/') & disown<CR><CR>

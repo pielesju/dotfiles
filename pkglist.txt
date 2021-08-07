@@ -55,6 +55,18 @@ sed
 smbclient
 sudo
 texinfo
+texlive-bibtexextra
+texlive-core
+texlive-fontsextra
+texlive-formatsextra
+texlive-games
+texlive-humanities
+texlive-latexextra
+texlive-music
+texlive-pictures
+texlive-pstricks
+texlive-publishers
+texlive-science
 tipp10
 ttf-dejavu
 unrar
@@ -70,5 +82,6 @@ xorg-xbacklight
 xorg-xinit
 xorg-xrandr
 xorg-xsetroot
+yay
 youtube-dl
 zip
