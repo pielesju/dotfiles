@@ -15,12 +15,16 @@ exec --no-startup-id feh --no-fehbg --randomize --bg-scale /home/julian/files/me
 exec --no-startup-id /home/julian/files/scripts/autodock.sh
 exec --no-startup-id dockd --daemon
 
-# applications
+# change wallpaper
 bindsym $mod+Shift+w exec feh --no-fehbg --randomize --bg-scale /home/julian/files/media/pictures/wallpapers/*
+
+# applicatios
 bindsym $alt+i exec firefox
 bindsym $alt+m exec thunderbird
-bindsym $alt+g exec gim
-bindsym $alt+t exec urxvt
+bindsym $alt+f exec thunar
+bindsym $alt+o exec libreoffice
+
+# terminal window
 bindsym $mod+Return exec urxvt
 
 # volume control
