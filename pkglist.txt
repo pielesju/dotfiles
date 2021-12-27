@@ -49,9 +49,13 @@ jq
 libreoffice-still
 libresprite-appimage
 libtool
+lightdm
+lightdm-gtk-greeter
+lightdm-gtk-greeter-settings
 linux
 linux-firmware
 lmms
+lolcat
 lxappearance
 m4
 make
@@ -60,6 +64,7 @@ maven
 minecraft-launcher
 mousepad
 mtpfs
+neofetch
 netbeans
 networkmanager
 openssh
