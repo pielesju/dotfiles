@@ -86,7 +86,10 @@ smbclient
 spotify
 steam
 sudo
+telegram-desktop
 texinfo
+texlive-core
+thonny
 thunar
 thunar-archive-plugin
 thunar-media-tags-plugin

@@ -23,6 +23,7 @@ bindsym $alt+i exec firefox
 bindsym $alt+m exec thunderbird
 bindsym $alt+f exec thunar
 bindsym $alt+o exec libreoffice
+bindsym $alt+t exec telegram-desktop
 
 # terminal window
 bindsym $mod+Return exec urxvt
