@@ -75,6 +75,7 @@ pulseaudio
 python-pip
 python-pyalsa
 python-wheel
+python2-pathlib
 qemu
 ristretto
 rxvt-unicode
@@ -84,6 +85,7 @@ simple-mtpfs
 sl
 smbclient
 spotify
+spotify-ripper
 steam
 sudo
 telegram-desktop

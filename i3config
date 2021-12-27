@@ -7,16 +7,20 @@
 set $mod Mod4
 set $alt Mod1
 
+set $wallpapers /home/julian/files/media/pictures/wallpapers/*
+set $resources /home/julian/.config/X11/xresources
+set $scripts /home/julian/files/scripts
+
 font pango:DejaVu Sans Mono 12
 
 # autostart
-exec --no-startup-id xrdb /home/julian/.config/X11/xresources
-exec --no-startup-id feh --no-fehbg --randomize --bg-scale /home/julian/files/media/pictures/wallpapers/*
-exec --no-startup-id /home/julian/files/scripts/autodock.sh
+exec --no-startup-id xrdb $resources
+exec --no-startup-id feh --no-fehbg --randomize --bg-scale $wallpapers
+exec --no-startup-id $scripts/autodock.sh
 exec --no-startup-id dockd --daemon
 
 # change wallpaper
-bindsym $mod+Shift+w exec feh --no-fehbg --randomize --bg-scale /home/julian/files/media/pictures/wallpapers/*
+bindsym $mod+Shift+w exec feh --no-fehbg --randomize --bg-scale $wallpapers
 
 # applicatios
 bindsym $alt+i exec firefox
