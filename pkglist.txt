@@ -64,6 +64,7 @@ maven
 minecraft-launcher
 mousepad
 mtpfs
+mugshot
 neofetch
 netbeans
 networkmanager
