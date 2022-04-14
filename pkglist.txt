@@ -1,4 +1,5 @@
 acpi
+anki
 apache
 audacity
 autoconf
@@ -8,6 +9,7 @@ binutils
 bison
 bleachbit
 blueman
+cheese
 clisp
 dhcpcd
 dnsmasq
@@ -45,7 +47,9 @@ intel-ucode
 iw
 iwd
 jdk-openjdk
+jetbrains-toolbox
 jq
+kmines
 libreoffice-still
 libresprite-appimage
 libtool
@@ -94,6 +98,7 @@ spotify
 spotify-ripper
 steam
 sudo
+sweethome3d
 telegram-desktop
 texinfo
 texlive-core
@@ -103,6 +108,7 @@ thunar-archive-plugin
 thunar-media-tags-plugin
 thunar-volman
 thunderbird
+tigervnc
 tiled
 tipp10
 ttf-dejavu
@@ -115,6 +121,7 @@ visual-studio-code-bin
 vlc
 wget
 which
+wireshark-qt
 xf86-video-intel
 xfburn
 xfce4-appfinder
