@@ -47,6 +47,10 @@ cd /home/julian
 ./files/scripts/dotfiles.sh
 pacman -Qqe > files/dotfiles/pkglist.txt
 
+# delete random files
+cd /home/julian
+rm -rf .xsession-errors .xsession-errors.old .python_history
+
 neofetch | lolcat
 
 # ls colors

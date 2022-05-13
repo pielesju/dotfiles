@@ -86,7 +86,7 @@ python-pip
 python-pyalsa
 python-wheel
 python2-pathlib
-qemu
+qemu-desktop
 ristretto
 rxvt-unicode
 samba
