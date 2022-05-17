@@ -5,12 +5,15 @@ audacity
 autoconf
 automake
 base
+bazel
 binutils
 bison
 bleachbit
 blueman
 cheese
+clang
 clisp
+compiler-rt
 dhcpcd
 dnsmasq
 dockd
@@ -53,9 +56,6 @@ kmines
 libreoffice-still
 libresprite-appimage
 libtool
-lightdm
-lightdm-gtk-greeter
-lightdm-gtk-greeter-settings
 linux
 linux-firmware
 lmms
@@ -88,6 +88,7 @@ python-wheel
 python2-pathlib
 qemu-desktop
 ristretto
+rsync
 rxvt-unicode
 samba
 sed

@@ -40,6 +40,7 @@ alias startx='startx "$XDG_CONFIG_HOME/X11/xinitrc" --
 
 # application init replacements
 alias vim='vim -u ~/.config/vim/vimrc'
+alias yarn='yarn --use-yarnrc "$XDG_CONFIG_HOME/yarn/config"'
 
 # execute
 cd /home/julian
@@ -49,7 +50,7 @@ pacman -Qqe > files/dotfiles/pkglist.txt
 
 # delete random files
 cd /home/julian
-rm -rf .xsession-errors .xsession-errors.old .python_history
+rm -rf .xsession-errors .xsession-errors.old .python_history Downloads
 
 neofetch | lolcat
 
@@ -71,3 +72,5 @@ alias gpg2='gpg2 --homedir "$XDG_DATA_HOME"/gnupg'
 export HISTFILE="$XDG_DATA_HOME"/bash/history
 export XAUTHORITY="$XDG_RUNTIME_DIR"/Xauthority
 export LESSHISTFILE="/dev/null"
+export ICEAUTHORITY="$XDG_CACHE_HOME"/ICEauthority
+export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
