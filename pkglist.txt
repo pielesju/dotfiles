@@ -99,7 +99,6 @@ spotify
 spotify-ripper
 steam
 sudo
-sweethome3d
 telegram-desktop
 texinfo
 texlive-core

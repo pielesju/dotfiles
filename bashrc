@@ -41,6 +41,8 @@ alias startx='startx "$XDG_CONFIG_HOME/X11/xinitrc" --
 # application init replacements
 alias vim='vim -u ~/.config/vim/vimrc'
 alias yarn='yarn --use-yarnrc "$XDG_CONFIG_HOME/yarn/config"'
+alias netbeans='netbeans --userdir "${XDG_CONFIG_HOME}"/netbeans'
+alias mvn='mvn -gs "$XDG_CONFIG_HOME"/maven/settings.xml'
 
 # execute
 cd /home/julian
