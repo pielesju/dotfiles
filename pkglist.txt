@@ -13,11 +13,14 @@ blueman
 cheese
 clang
 clisp
+code
 compiler-rt
 dhcpcd
+discord
 dnsmasq
 dockd
 dump_syms
+electron18
 fakeroot
 feh
 figlet
@@ -26,6 +29,7 @@ findutils
 firefox
 flex
 foxitreader
+freeplane
 garcon
 gawk
 gcc
@@ -87,6 +91,9 @@ python-pyalsa
 python-wheel
 python2-pathlib
 qemu-desktop
+quadrapassel
+redshift
+ripgrep
 ristretto
 rsync
 rxvt-unicode
@@ -107,7 +114,6 @@ thunar
 thunar-archive-plugin
 thunar-media-tags-plugin
 thunar-volman
-thunderbird
 tigervnc
 tiled
 tipp10
@@ -117,7 +123,6 @@ unrar
 unzip
 vim
 virtualbox
-visual-studio-code-bin
 vlc
 wget
 which
@@ -171,5 +176,6 @@ xorg-xkill
 xorg-xrandr
 xorg-xsetroot
 yay
+yetris
 youtube-dl
 zip

@@ -5,3 +5,4 @@
 
 #exec i3
 exec xfce4-session
+#exec gnome-session

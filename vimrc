@@ -9,7 +9,7 @@ set textwidth=80
 set backspace=start,eol,indent
 set formatoptions+=t
 set nocompatible
-set colorcolumn=80
+set colorcolumn=79
 set viminfo=""
 highlight ColorColumn ctermbg=red
 filetype plugin indent on
