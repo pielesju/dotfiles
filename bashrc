@@ -76,3 +76,4 @@ export XAUTHORITY="$XDG_RUNTIME_DIR"/Xauthority
 export LESSHISTFILE="/dev/null"
 export ICEAUTHORITY="$XDG_CACHE_HOME"/ICEauthority
 export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
+export PICO_SDK_PATH="$HOME/files/dev/pico-sdk"

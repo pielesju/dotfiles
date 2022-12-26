@@ -2,7 +2,6 @@
 # \ \/ / | '_ \| | __| '__/ __|
 #  >  <| | | | | | |_| | | (__ 
 # /_/\_\_|_| |_|_|\__|_|  \___|
-
 #exec i3
-exec xfce4-session
-#exec gnome-session
+#exec xfce4-session
+exec gnome-session
