@@ -6,13 +6,15 @@
 
 # prompt
 
-spc=$(i3-msg -t get_workspaces \ | jq '.[] | select(.focused==true).name')
-spc=${spc#*\"}
-spc=${spc%\"}
+#spc=$(i3-msg -t get_workspaces \ | jq '.[] | select(.focused==true).name')
+#spc=${spc#*\"}
+#spc=${spc%\"}
 
-PS1="\w $spc \$ "
+PS1="\w \$ "
 
 # navigation commands
+alias ~='cd ~'
+alias '-'='cd -'
 alias ..='cd ..'
 alias spawn='cd /'
 alias home='cd ~'
@@ -29,6 +31,7 @@ alias install='sudo pacman -S'
 alias deinstall='sudo pacman -R'
 alias update='sudo pacman -Syu'
 alias orphans='sudo pacman -Rs $(pacman -Qqtd)'
+alias uuu='sudo pacman -Syu && sudo yay -Syu && orphans'
 
 # X11 commands
 alias dock='xrandr --output DP2-3 --mode 1920x1080 --output eDP1 --off'
@@ -43,6 +46,24 @@ alias vim='vim -u ~/.config/vim/vimrc'
 alias yarn='yarn --use-yarnrc "$XDG_CONFIG_HOME/yarn/config"'
 alias netbeans='netbeans --userdir "${XDG_CONFIG_HOME}"/netbeans'
 alias mvn='mvn -gs "$XDG_CONFIG_HOME"/maven/settings.xml'
+
+# calculate
+alias c=calc
+
+# size commands
+alias rootsize='sudo du -sh /'
+alias homesize='du -sh ~'
+alias filessize='du -sh ~/files'
+
+function calc {
+	echo $1 | bc
+}
+
+# backup
+alias backup='sudo rsync -avx --progress --delete-after /home/ /backup/'
+
+#print
+alias print='lpr -P HP_LaserJet_MFP_M139-M142 $1'
 
 # execute
 cd /home/julian
@@ -77,3 +98,4 @@ export LESSHISTFILE="/dev/null"
 export ICEAUTHORITY="$XDG_CACHE_HOME"/ICEauthority
 export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
 export PICO_SDK_PATH="$HOME/files/dev/pico-sdk"
+export PRINTER="HP_LaserJet_MFP_M139-M142"
