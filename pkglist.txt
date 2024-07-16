@@ -156,6 +156,7 @@ linux
 linux-firmware
 linux-wifi-hotspot
 lmms
+logisim-evolution
 lolcat
 lxappearance
 m4
@@ -268,6 +269,9 @@ tumbler
 unrar
 unzip
 vim
+vim-airline
+vim-nerdtree
+vim-plug
 virtualbox
 vlc
 w3m

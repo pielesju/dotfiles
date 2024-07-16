@@ -12,7 +12,9 @@ set nocompatible
 set colorcolumn=79
 set viminfo=""
 highlight ColorColumn ctermbg=red
-filetype plugin indent on
+filetype on
+filetype plugin on
+filetype indent on
 syntax on
 set number
 set cursorline
@@ -30,8 +32,22 @@ set smartcase
 set showcmd
 set showmode
 set showmatch
+set clipboard=unnamedplus
+set showmode
+set wildmenu
+set lazyredraw
+set ttyfast
+set autoindent
+set smartindent
+set hlsearch 
 
 "compile current LaTeX document
 map I :! pdflatex %<CR><CR>
 "show compiled LaTeX document
 map S :! mupdf $(echo % \| sed 's/tex$/pdf/') & disown<CR><CR>
+
+set termwinsize=10*200
+let g:NERDTreeWinSize=16
+
+autocmd VimEnter * below terminal
+autocmd VimEnter * NERDTree .
