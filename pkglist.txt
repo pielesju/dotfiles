@@ -21,6 +21,7 @@ calcurse
 cheese
 clang
 clisp
+cmatrix
 cmus
 codeblocks
 compiler-rt
@@ -55,6 +56,7 @@ flex
 four-in-a-row
 foxitreader
 freeplane
+freerouting
 garcon
 gawk
 gcc
@@ -132,6 +134,7 @@ gzip
 hdparm
 higan
 hitori
+hollywood
 hostapd
 hplip
 htop
@@ -147,6 +150,8 @@ jdk-openjdk
 jetbrains-toolbox
 jq
 kicad
+kicad-library
+kicad-library-3d
 kmines
 libreoffice-still
 libresprite-appimage
@@ -156,6 +161,7 @@ linux
 linux-firmware
 linux-wifi-hotspot
 lmms
+localsearch
 logisim-evolution
 lolcat
 lxappearance
@@ -209,6 +215,7 @@ rygel
 samba
 screen
 sed
+shellcheck
 simple-mtpfs
 simple-scan
 sl
@@ -219,6 +226,7 @@ spotify-tui-bin
 spotifyd
 steam
 sudo
+supertuxkart
 sushi
 swell-foop
 sysprof
@@ -261,10 +269,10 @@ tiled
 tipp10
 tmux
 totem
-tracker3-miners
 tree
 ttf-cascadia-code
 ttf-dejavu
+ttf-dseg
 tumbler
 unrar
 unzip

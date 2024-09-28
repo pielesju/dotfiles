@@ -4,8 +4,8 @@
 "  \ V /| | | | | | | | | (__ 
 "   \_/ |_|_| |_| |_|_|  \___|
 
-set columns=80
-set textwidth=80
+set columns=60
+set textwidth=60
 set backspace=start,eol,indent
 set formatoptions+=t
 set nocompatible
@@ -45,9 +45,3 @@ set hlsearch
 map I :! pdflatex %<CR><CR>
 "show compiled LaTeX document
 map S :! mupdf $(echo % \| sed 's/tex$/pdf/') & disown<CR><CR>
-
-set termwinsize=10*200
-let g:NERDTreeWinSize=16
-
-autocmd VimEnter * below terminal
-autocmd VimEnter * NERDTree .
