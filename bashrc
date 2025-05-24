@@ -1,3 +1,4 @@
+#!/bin/bash
 #  _               _              
 # | |__   __ _ ___| |__  _ __ ___ 
 # | '_ \ / _` / __| '_ \| '__/ __|
@@ -20,10 +21,9 @@ export XDG_STATE_HOME="$HOME/.local/state"
 export XINITRC="$XDG_CONFIG_HOME"/X11/xinitrc
 export XSERVERRC="$XDG_CONFIG_HOME"/X11/xserverrc
 export PROJECTS_DIR="$HOME/files/projects"
-export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
+export _JAVA_OPTIONS="-Djava.util.prefs.userRoot=$XDG_CONFIG_HOME/java -Djavafx.cachedir=$XDG_CACHE_HOME/openjfx"
 export GTK2_RC_FILE="$XDG_CONFIG_HOME"/gtk-2.0/gtkrc
 export GNUPGHOME="$XDG_DATA_HOME"/gnupg
-alias gpg2='gpg2 --homedir "$XDG_DATA_HOME"/gnupg'
 export HISTFILE="$XDG_DATA_HOME"/bash/history
 export XAUTHORITY="$XDG_RUNTIME_DIR"/Xauthority
 export LESSHISTFILE="/dev/null"
@@ -31,6 +31,8 @@ export ICEAUTHORITY="$XDG_CACHE_HOME"/ICEauthority
 export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
 export PICO_SDK_PATH="$HOME/files/dev/pico-sdk"
 export PRINTER="HP_LaserJet_MFP_M139-M142"
+export MAVEN_OPTS=-Dmaven.repo.local="$XDG_DATA_HOME"/maven/repository
+export CARGO_HOME="$XDG_DATA_HOME"/cargo
 
 # navigation commands
 alias ~='cd ~'
@@ -38,6 +40,9 @@ alias ~='cd ~'
 alias ..='cd ..'
 alias spawn='cd /'
 alias home='cd ~'
+
+
+alias gpg2='gpg2 --homedir "$XDG_DATA_HOME"/gnupg'
 
 # ls commands
 alias count='ll | wc -l'
@@ -80,8 +85,19 @@ function calc {
 }
 
 # backup
-alias backup_home='sudo rsync -av --delete /home/julian /backup'
-alias backup_root='sudo rsync -av --delete --exclude={"/backup","/home","/proc","/sys","/dev","/run","/tmp","/mnt","/media","/lost+found"} / /backup/root'
+alias mybackup='sudo rsync -av --delete \
+    --exclude=/backup \
+    --exclude=/proc \
+    --exclude=/sys \
+    --exclude=/dev \
+    --exclude=/run \
+    --exclude=/tmp \
+    --exclude=/mnt \
+    --exclude=/media \
+    --exclude=/lost+found \
+    / /backup'
+
+alias pifilesbackup='rsync -av --delete /home/julian/files/ julian@cofezuwo.org:/home/julian/files/'
 
 # programs
 alias ff='firefox &'
@@ -108,7 +124,7 @@ pacman -Qqe > files/projects/dotfiles/pkglist.txt
 
 # delete random files
 mvhome
-rm -rf .xsession-errors .xsession-errors.old .python_history Downloads
+rm -rf .xsession-errors .xsession-errors.old .python_history Downloads .Xauthorit
 
 neofetch | lolcat
 

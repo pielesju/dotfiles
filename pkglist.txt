@@ -25,6 +25,7 @@ cmatrix
 cmus
 codeblocks
 compiler-rt
+cool-retro-term
 cpplint
 cups
 dconf-editor
@@ -55,6 +56,7 @@ five-or-more
 flex
 four-in-a-row
 foxitreader
+freecad
 freeplane
 freerouting
 garcon
@@ -146,9 +148,9 @@ inkscape
 intel-ucode
 iw
 iwd
-jdk-openjdk
 jetbrains-toolbox
 jq
+jre-openjdk
 kicad
 kicad-library
 kicad-library-3d
@@ -171,7 +173,6 @@ malcontent
 man-db
 maven
 minecraft-launcher
-minecraft-technic-launcher
 mint-themes
 mousepad
 mtpfs
@@ -207,8 +208,10 @@ quadrapassel
 ranger
 raspberry-pico-sdk-git
 redshift
+reflector
 ripgrep
 ristretto
+rpi-imager
 rsync
 rxvt-unicode
 rygel
@@ -336,10 +339,8 @@ xorg-xinit
 xorg-xkill
 xorg-xrandr
 xorg-xsetroot
-yay
 yelp
 yetris
 youtube-dl
 zip
-zoom
 zuki-themes

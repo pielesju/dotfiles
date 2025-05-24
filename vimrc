@@ -4,8 +4,8 @@
 "  \ V /| | | | | | | | | (__ 
 "   \_/ |_|_| |_| |_|_|  \___|
 
-set columns=60
-set textwidth=60
+set columns=80
+set textwidth=80
 set backspace=start,eol,indent
 set formatoptions+=t
 set nocompatible
